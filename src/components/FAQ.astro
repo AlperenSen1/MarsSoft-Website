@@ -1,0 +1,69 @@
+---
+// No props needed for this static component
+---
+<style>
+  details > summary {
+    list-style: none; /* Remove default marker */
+  }
+  details > summary::-webkit-details-marker {
+    display: none; /* Remove default marker in Safari */
+  }
+  details[open] summary svg {
+    transform: rotate(180deg);
+  }
+</style>
+
+<section id="faq" class="bg-neutral-900 py-20">
+  <div class="container mx-auto px-4 max-w-3xl">
+    <div class="text-center mb-12">
+      <h2 class="text-4xl font-bold text-gray-200">Sıkça Sorulan Sorular</h2>
+      <p class="text-gray-400 mt-4">Merak ettiğiniz her şey burada. Başka sorunuz varsa bize ulaşmaktan çekinmeyin.</p>
+    </div>
+
+    <div class="space-y-4">
+      <!-- FAQ Item 1 -->
+      <details class="group bg-neutral-900 p-6 rounded-lg border border-red-900/50">
+        <summary class="flex justify-between items-center font-bold text-lg text-gray-200 cursor-pointer">
+          Kodlama bilmem gerekiyor mu?
+          <svg class="w-6 h-6 text-red-600 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+        </summary>
+        <div class="mt-4 text-gray-400">
+          <p>Hayır. Platformumuz tamamen görsel arayüz üzerine kuruludur. Blokları sürükleyip bırakarak botunuzu tasarlarsınız.</p>
+        </div>
+      </details>
+
+      <!-- FAQ Item 2 -->
+      <details class="group bg-neutral-900 p-6 rounded-lg border border-red-900/50">
+        <summary class="flex justify-between items-center font-bold text-lg text-gray-200 cursor-pointer">
+          Hangi yapay zeka modellerini kullanabilirim?
+          <svg class="w-6 h-6 text-red-600 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+        </summary>
+        <div class="mt-4 text-gray-400">
+          <p>OpenAI (GPT-4), Anthropic (Claude), Google (Gemini) ve Llama gibi açık kaynaklı modellerin hepsini API anahtarınızı girerek kullanabilirsiniz.</p>
+        </div>
+      </details>
+
+      <!-- FAQ Item 3 -->
+      <details class="group bg-neutral-900 p-6 rounded-lg border border-red-900/50">
+        <summary class="flex justify-between items-center font-bold text-lg text-gray-200 cursor-pointer">
+          Verilerim güvende mi?
+          <svg class="w-6 h-6 text-red-600 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+        </summary>
+        <div class="mt-4 text-gray-400">
+          <p>Kesinlikle. Her müşterinin sistemi kendi izole konteynerinde çalışır. Verileriniz başka müşterilerle karışmaz ve model eğitimi için kullanılmaz.</p>
+        </div>
+      </details>
+
+      <!-- FAQ Item 4 -->
+      <details class="group bg-neutral-900 p-6 rounded-lg border border-red-900/50">
+        <summary class="flex justify-between items-center font-bold text-lg text-gray-200 cursor-pointer">
+          Kendi API anahtarımı mı kullanacağım?
+          <svg class="w-6 h-6 text-red-600 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+        </summary>
+        <div class="mt-4 text-gray-400">
+          <p>Evet. MarsSoft size sadece "motoru" (altyapıyı) sağlar. Yakıtı (API Key) siz koyarsınız, böylece maliyetlerinizi tam kontrol edersiniz.</p>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
